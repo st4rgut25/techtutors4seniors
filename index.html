@@ -8,7 +8,7 @@
     <title>Ed Cox</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -17,14 +17,105 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
   </head>
   <body>
-  <h1 class="btn-primary">Header 1</h1>
-    <h1>Hello, world!</h1>
+    <h1 class="btn-primary">Senior Tech Support <a href="tel:562-396-8859" style="float:right; color:white;margin-right:20px;">562-396-8859</a></h1>
+    <!-- creating a container for main image-->
+    <h3 class="well" style="width:95%; height:340px;"><img src="pics/nerdykid.jpg" style="float:left; height: 300px; width:350px; padding: 10px 10px 10px 10px;">We are the Tech Wiz Kids! <br><br>We're on a mission to make computers easier to use. Ever since mom and dad placed an iPad in our crib, we've grown up with technology. Now it's our turn to give back the same indispensible knowledge (if not the same love) to an older, less tech-savvy generations. <br><br>We love it when our customers leave tutorials a little less confused about technology. Here's our guarantee to you: we'll conduct a 30 minute sesion free of charge to learn your needs. Then you decide whether to continue.  </h3>
+
+    <!--How Business Works-->
+    <h2 class="btn-primary">How does it work?</h2>
+    <div id="ExplainBusiness">
+    	<h3>We are a tech squad who provides face-to-face tech support through chat services like Google Hangouts and Skype. Here's how our business works. </h3>
+    </div>
+
+    <div class="css-slideshow">
+
+
+	    <figure>
+	    	<img class="circle" src="pics/step5.jpg">
+	    	<figcaption class="well">5.Learn and Enjoy!</figcaption>
+	    </figure>
+
+	    <figure>
+	    	<img class="circle" src="pics/step4.jpg">
+	    	<figcaption class="well">4.Schedule regular appointments for tech tutorials on subjects from email to how to use Facbeook</figcaption>
+	    </figure>
+	    <figure>
+	    	<img class="circle" src="pics/step2.jpg">
+	    	<figcaption class="well">3.Let us help you set up a web chat service for face-to-face conversations</figcaption>
+	    </figure>
+	    <figure>
+	    	<img class="circle" src="pics/step3.jpg">
+	    	<figcaption class="well">2. First tech-tutoring session is on us! We want to learn how we can help you become an independent computer user</figcaption>
+	    </figure>
+
+	    <figure>
+	    	<img class="circle" src="pics/step1.jpg">
+	    	<figcaption class="well">1.Contact us via <a href="mailto:ejcox24@gmail.com">email</a> or call <a href="tel:555-555-5555">562-396-8859</a> so we can get to know you</figcaption>
+	    </figure>
+	</div>
+
+    <!-- Services-->
+    <h2 class="btn-primary">Learn More about Our Services</h2>
+    <div id="center">
+      <br>
+	  <div class="imgcontainer"><img src="pics/facebook.png"></div>
+ 	  <div class="imgcontainer"><img src="pics/health.png"></div>
+ 	  <div class="imgcontainer"><img src="pics/gmail.png"></div>
+ 	  <div class="imgcontainer"><img src="pics/amazon.png"></div>
+ 	  <div class="imgcontainer"><img src="pics/googling.png"></div>
+ 	  <div class="imgcontainer"><img src="pics/device.png"></div>
+    </div>
+    <!-- Clicking on a div above will cause an explainer div to appear below. -->
+   	<div class="well">
+    <div id="expandimg">
+
+    </div>
+
+    <div id="expand-des">
+
+    </div>
+    </div>
+
+    <h2 class="btn-primary">Payment Tiers</h2>
+    <div id="pay">
+        <div class="paywell"><h1>Web Class</h1><h3>$300/mo</h3><ul><li>10 Hours of Online Instruction</li><li>Customized Learning Schedule/Rubric</li><li>Free Recordings for Reference</li></ul></div>
+        <div class="paywell"><h1>ValuePak</h1><ul><h3>$250/mo</h3><li>5 hrs formal teaching / 5 hrs Troubleshooting</li><li>Individualized Curriculum</li><li>Free Recordings for Reference<</li></ul></div>
+        <div class="paywell"><h1>Troubleshooting</h1><h3>$25/hr</h3><ul><li>Help with Specific Tech Questions</li><li>Flexible Hours</li><li>Free Recordings for Reference</li></ul></div>
+    </div>
+
+    <h2 class="btn-primary">About Me</h2>
+    <div id="aboutme">
+        <img src="pics/edcox.jpg">
+        <h3>Hi, I'm Edward Cox, the creator of Senior Tech Support. I graduated with a Bachelors of Science in Journalism degree at Northwestern. More valuable than my diploma though, was the four years I spent living with my grandparents in Evanston. I must give my grandma credit for this idea for bothering me to no end about tech questions. I hope our team can give the same help to you. Please <a href="mailto:ejcox24@gmail.com">email</a> me or call <a href="tel:562-396-8859">562-396-8859</a> for more information.
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/myjs.js"></script>
+    <script>
+    		$('.imgcontainer').click(function(){
+    				$('#expandimg').empty();
+    				$('#expand-des').empty();
+    			})
+    			.click(function(){
+    				$(this).clone().appendTo($('#expandimg'))
+    			})
+    			.click(function(){
+    				var info = ['<span>Want to reconnect with your old friends or meet new ones? We can show you how to use social media platforms like Facebook, Twitter and Pinterest</span>', '<span>Need help signing onto health.gov? We can take you through the process step by step securely</span>','<span>We can give you the ins and outs of navigating gmail, msn, hotmail and other email services</span>','<span>We can help you get those Hello Kitty slippers you saw online on your doorstep in a couple days</span>','<span>We can help you research topics on Google</span>','<span>From iPads to Kindles, we have the expertise to make your device management a breeze</span>'];
+
+    				$('#expand-des').append((info[$(this).index()-1]));
+    			});
+
+
+
+
+
+	</script>
+
   </body>
 </html>

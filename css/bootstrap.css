@@ -8,9 +8,20 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+      overflow-x: hidden;
+      height: 100%;
+      padding:0px;
+      margin:0px;
+      width:100%;
+
 }
 body {
   margin: 0;
+  overflow-x: hidden;
+  padding:0px;
+  margin:0px;
+  min-height: 100%;
+  width:100%;
 }
 article,
 aside,
@@ -34,6 +45,180 @@ video {
   display: inline-block;
   vertical-align: baseline;
 }
+#center{
+  width: 100%;
+  margin: 0 auto;
+  clear:both;
+}
+
+#aboutme{
+  
+  width:100%;
+  padding: 19px;
+  height:300px;
+}
+
+#aboutme img{
+  display:inline-block;
+  width:200px;
+  height:200px;
+  margin-bottom:100px;
+}
+
+#aboutme h3{
+  display:inline-block;
+  max-width:1100px;
+  padding-left:30px;
+}
+
+.imgcontainer{
+  width:230px;
+  height:250px;
+  display:inline-block;
+}
+
+.imgcontainer:hover{
+  opacity:.4;
+}
+.imgcontainer img{
+  width:200px;
+  height:200px;
+}
+
+#expandimg{
+  width:30%;
+  display: flex;
+  flex-direction: column;
+  display:inline-block;
+}
+#expand-des{
+  width:60%;
+  display:flex;
+  flex-direction:column;
+  display:inline-block;
+}
+#expand-des span{
+  font-size:30px;
+  position:relative;
+  bottom:0px;
+}
+/*
+.services{
+  width:200px;
+  height:200px;
+  float:left;
+  border-radius:20px;
+  border: solid black 1px;
+  margin-right:15px;
+}
+
+.imgcontainer:hover .imgDescription{
+  visibility: visible;
+  opacity: 1;
+}
+*/
+#ExplainBusiness{
+  width:40%;
+  height:300px;
+  display:inline-block;
+  padding: 10px 30px 50px 50px;
+}
+
+.circle{
+  border-radius: 50%;
+  margin:0 auto;
+  width:300px;
+  height:300px;
+}
+
+.css-slideshow{
+   position: relative;
+   width: 60%;
+   height: 300px;
+   float:right;
+   left:100px;
+
+}
+
+.css-slideshow figure{
+   margin: 0;
+   position: absolute;
+}
+.css-slideshow figcaption{
+
+   top:5px;
+   left:350px;
+   position: absolute;
+   width:300px;
+   height:300px;
+   border-radius:10px;
+   padding: 2px 2px 15px 15px;
+   font-size: 2em;
+}
+
+/*
+figure:nth-child(5) {
+   animation: xfade 30s 24s infinite;
+}
+figure:nth-child(4) {
+   animation: xfade 30s 18s infinite;
+}
+figure:nth-child(3) {
+   animation: xfade 30s 12s infinite;
+}
+figure:nth-child(2) {
+   animation: xfade 30s 6s infinite;
+}
+figure:nth-child(1) {
+   animation: xfade 30s 0s infinite;
+}
+*/
+figure:nth-child(1) {
+   animation: xfade 30s 24s infinite;
+}
+figure:nth-child(2) {
+   animation: xfade 30s 18s infinite;
+}
+figure:nth-child(3) {
+   animation: xfade 30s 12s infinite;
+}
+figure:nth-child(4) {
+   animation: xfade 30s 6s infinite;
+}
+figure:nth-child(5) {
+   animation: xfade 30s 0s infinite;
+}
+ 
+@keyframes xfade{
+   0%{
+      opacity: 1;
+   }
+   18% {
+      opacity:1;
+   }
+   20%{
+      opacity: 0;
+   }
+   98% {
+      opacity:0;
+   }
+   100% {
+      opacity:1;
+   }
+}
+
+#insertdiv{
+  width:80%;
+  height:200px;
+  float:right;
+}
+
+#socialmedia{
+  width:100%;
+  height:250px;
+  border: solid-black 1px;
+}
+
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -5816,6 +6001,23 @@ button.list-group-item-danger.active:focus {
 .embed-responsive-4by3 {
   padding-bottom: 75%;
 }
+
+.paywell {
+  width:25%;
+  min-height: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 20px;
+  position:relative;
+  display:inline-block;
+  left:200px;
+  margin-left:20px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
 .well {
   min-height: 20px;
   padding: 19px;
@@ -5826,6 +6028,7 @@ button.list-group-item-danger.active:focus {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
 }
+
 .well blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, .15);
