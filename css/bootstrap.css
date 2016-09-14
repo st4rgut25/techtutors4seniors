@@ -6062,6 +6062,14 @@ h3.well{
   max-height: 600px;
 }
 
+h3.well img{
+   float:left; 
+   height: 500px; 
+   width:600px; 
+   padding: 0px 10px 10px 10px; 
+   border-radius: 20px;
+}
+
 .well blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, .15);
