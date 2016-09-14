@@ -6058,8 +6058,15 @@ button.list-group-item-danger.active:focus {
 }
 
 h3.well{
+  width:95%; 
+  height:590px; 
+  margin-left:20px; 
+  margin-top:20px;
+  font-size:30px;
+  padding:40px 20px 20px 20px;
   margin-bottom:20px;
   max-height: 600px;
+  font-size:30px;
 }
 
 h3.well img{
