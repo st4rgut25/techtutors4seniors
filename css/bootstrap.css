@@ -6075,6 +6075,7 @@ h3.well img{
    width:600px; 
    padding: 0px 10px 10px 10px; 
    border-radius: 20px;
+   font-size:0px;
 }
 
 .well blockquote {
