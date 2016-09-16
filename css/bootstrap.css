@@ -160,10 +160,13 @@ video {
    width:300px;
    height:300px;
    border-radius:10px;
-   padding: 2px 2px 15px 15px;
-   font-size: 2em;
+   padding: 15px 15px 15px 15px;
+
 }
 
+.css-slideshow figcaption.well{
+  font-size:24px;
+}
 /*
 figure:nth-child(5) {
    animation: xfade 30s 24s infinite;
@@ -198,21 +201,29 @@ figure:nth-child(5) {
 }
  
 @keyframes xfade{
-   0%{
+   0% {
       opacity: 1;
    }
    18% {
-      opacity:1;
+      opacity: 1;
    }
-   20%{
+   20% {
       opacity: 0;
    }
    98% {
-      opacity:0;
+      opacity: 0;
    }
    100% {
-      opacity:1;
+      opacity: 1;
    }
+}
+
+#refresh{
+  position:relative;
+  left:56%;
+  bottom:10px;
+  background-color:#4dff4d;
+  border-radius:20%
 }
 
 #insertdiv{
@@ -1275,8 +1286,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: "Palatino Linotype", "Palatino LT STD", "Book Antiqua";
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
@@ -6034,8 +6044,7 @@ button.list-group-item-danger.active:focus {
 }
 
 .paywell {
-  width:25%;
-  min-height: 20px;
+  width:30%;
   padding: 10px;
   margin-bottom: 20px;
   background-color: #f5f5f5;
@@ -6043,10 +6052,14 @@ button.list-group-item-danger.active:focus {
   border-radius: 20px;
   position:relative;
   display:inline-block;
-  left:200px;
+  left:120px;
   margin-left:20px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+#pay li{
+  font-size:20px;
 }
 
 .well {
@@ -6068,7 +6081,7 @@ h3.well{
   max-height: 600px;
   font-size:30px;
 }
-
+/*
 h3.well img{
    float:left; 
    height: 500px; 
@@ -6077,7 +6090,7 @@ h3.well img{
    border-radius: 20px;
    font-size:0px;
 }
-
+*/
 .well blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, .15);
