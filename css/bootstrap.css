@@ -6052,7 +6052,7 @@ button.list-group-item-danger.active:focus {
   border-radius: 20px;
   position:relative;
   display:inline-block;
-  left:120px;
+  left:40px;
   margin-left:20px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
