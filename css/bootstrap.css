@@ -93,6 +93,12 @@ video {
   flex-direction: column;
   display:inline-block;
 }
+#btn-primaryhead h1 a:first-child{
+  float:right;
+  color:white; 
+  margin-right:10px
+}
+
 #expand-des{
   margin-top:20px;
   width:60%;
