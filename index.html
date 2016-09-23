@@ -49,7 +49,7 @@
 
     <h1>Tech Tutors 4 Seniors  
     <a href="mailto:techtutors4seniors@gmail.com" onclick="trackOutboundLink('mailto:techtutors4seniors@gmail.com');goog_report_conversion('mailto:techtutors4seniors@gmail.com')">email</a>
-    <a href="tel:562-396-8859" onclick="trackOutboundLink('tel:562-396-8859'); goog_report_conversion('tel:562-396-8859')" style="float:right; color:white;margin-right:20px;">562-396-8859 | </a>
+    <a href="tel:562-396-8859" onclick="trackOutboundLink('tel:562-396-8859');" style="float:right; color:white;margin-right:20px;">562-396-8859 | </a>
     </h1>
 
     <h3 style="float:right; padding:10px 20px 0px 0px"><a href="#business">Our Business</a><a href="#services">Services</a><a href="#payment">Payment</a><a href="#aboutmeh">About Us</a></h3>
@@ -176,38 +176,43 @@
 
 	</script>
 
-   <!-- Google Code for ClickCallHeader Conversion Page
-In your html page, add the snippet and call
-goog_report_conversion when someone clicks on the
-phone number link or button. -->
-<script>
-  /* <![CDATA[ */
-  goog_snippet_vars = function() {
-    var w = window;
-    w.google_conversion_id = 873363510;
-    w.google_conversion_label = "V6UmCPiumGoQtvC5oAM";
-    w.google_remarketing_only = false;
-  }
-  // DO NOT CHANGE THE CODE BELOW.
-  goog_report_conversion = function(url) {
-    goog_snippet_vars();
-    window.google_conversion_format = "3";
-    var opt = new Object();
-    opt.onload_callback = function() {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  }
-  var conv_handler = window['google_trackConversion'];
-  if (typeof(conv_handler) == 'function') {
-    conv_handler(opt);
-  }
-}
-/* ]]> */
+<script type="text/javascript"> 
+/* <![CDATA[ */ 
+goog_snippet_vars = function() { 
+var w = window; 
+w.google_conversion_id = 873363510; 
+w.google_conversion_label = "V6UmCPiumGoQtvC5oAM"; 
+w.google_remarketing_only = false; 
+} 
+// DO NOT CHANGE THE CODE BELOW. 
+goog_report_conversion = function(url) { 
+goog_snippet_vars(); 
+window.google_conversion_format = "3"; 
+var opt = new Object(); 
+opt.onload_callback = function() { 
+if (typeof(url) != 'undefined') { 
+window.location = url; 
+} 
+} 
+var conv_handler = window['google_trackConversion']; 
+if (typeof(conv_handler) == 'function') { 
+conv_handler(opt); 
+} 
+} 
+/* ]]> */ 
+</script> 
+<script type="text/javascript" 
+src="//www.googleadservices.com/pagead/conversion_async.js">
 </script>
+
 <script>
-  src="https://www.googleadservices.com/pagead/conversion_async.js"
+  window.addEventListener('load',function(){
+    jQuery('a[href="tel:562-396-8859"]').click(function(){
+      goog_report_conversion(jQuery(this).attr('href'));
+    });
+  });
 </script>
+
   </body>
 
 </html>
